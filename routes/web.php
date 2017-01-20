@@ -11,6 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+
+Auth::routes();
+
+Route::get('/', 'Homecontroller@index');
+Route::get('/home', 'HomeController@index');
+Route::get('/recipe/{recipe}', 'HomeController@show');
+Route::get('/toevoegen', 'HomeController@create');
+Route::post('/recipe/add', 'HomeController@add');
