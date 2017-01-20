@@ -61,6 +61,9 @@
 
                                 <ul class="dropdown-menu" role="menu">
                                     <li>
+                                        <a href="/mijnRecepten">Mijn Recepten</a>
+                                    </li>
+                                    <li>
                                         <a href="/toevoegen">Recept Toevoegen</a>
                                     </li>
                                     <hr/>

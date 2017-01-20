@@ -28,7 +28,7 @@ class RecipesTableSeeder extends Seeder
             'time' => 40,
             'persons' => 4,
             'image' => 'http://www.ah.nl.kpnis.nl/static/recepten/img_007161_1600x560_JPG.jpg',
-            'users_id' => 1,
+            'user_id' => 1,
         ]);
 
         DB::table('recipes')->insert([
@@ -49,7 +49,7 @@ class RecipesTableSeeder extends Seeder
             'time' => 17,
             'persons' => 4,
             'image' => 'http://www.ah.nl.kpnis.nl/static/recepten/img_081908_1600x560_JPG.jpg',
-            'users_id' => 1,
+            'user_id' => 1,
         ]);
 
         DB::table('recipes')->insert([
@@ -69,7 +69,7 @@ class RecipesTableSeeder extends Seeder
             'time' => 20,
             'persons' => 4,
             'image' => 'http://www.ah.nl.kpnis.nl/static/recepten/img_081908_1600x560_JPG.jpg',
-            'users_id' => 1,
+            'user_id' => 1,
         ]);
 
         DB::table('recipes')->insert([
@@ -93,7 +93,7 @@ class RecipesTableSeeder extends Seeder
             'time' => 155,
             'persons' => 4,
             'image' => 'http://www.ah.nl.kpnis.nl/static/recepten/img_059791_1600x560_JPG.jpg',
-            'users_id' => 1,
+            'user_id' => 1,
         ]);
     }
 }

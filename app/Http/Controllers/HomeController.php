@@ -55,10 +55,17 @@ class HomeController extends Controller
         $recipe->time = $request->time;
         $recipe->persons = $request->persons;
         $recipe->image = $request->image;
-        $recipe->users_id = Auth::user()->id;
+        $recipe->user_id = Auth::user()->id;
 
         $recipe->save();
 
-        return back();
+        return redirect('/');
+    }
+
+    public function myRecipes()
+    {
+        $recipes = Recipe::where('user_id', Auth::user()->id)->get();
+
+        return view('myRecipes', compact('recipes'));
     }
 }

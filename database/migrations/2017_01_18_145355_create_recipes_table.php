@@ -22,7 +22,7 @@ class CreateRecipesTable extends Migration
             $table->integer('time');
             $table->integer('persons');
             $table->string('image');
-            $table->integer('users_id');
+            $table->integer('user_id');
             $table->timestamps();
         });
     }
